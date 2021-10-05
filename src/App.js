@@ -1,34 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { Button } from './components/Button';
-import {
-  darkTheme,
-  theme as baseTheme,
-  styled,
-} from './stitches.config';
+import { globalCss, styled } from './stitches.config';
 
 const Root = styled('div', {
-  backgroundColor: '$base1',
-  color: '$base12',
-  minHeight: '100vh',
-  width: '100%',
   display: 'flex',
-  justifyContent: 'center',
+  flexDirection: 'column',
   alignItems: 'center',
 });
 
+const globalStyles = globalCss({
+  body: {
+    minHeight: '100vh',
+    margin: 0,
+    padding: 0,
+    backgroundColor: '$AppBg1',
+    color: '$LowContrast',
+    fontFamily: '$untitled',
+    fontSize: '$1',
+    lineHeight: '$1',
+  },
+});
+
 const App = () => {
-  const [newTheme, setNewTheme] = useState(false);
-  const changeTheme = () => {
-    setNewTheme(!newTheme);
-  };
+  globalStyles();
   return (
-    <Root
-      className={newTheme ? darkTheme.className : baseTheme.className}
-    >
+    <Root>
       <div>hello friend</div>
       <Button>Button</Button>
-      <Button onClick={changeTheme}>Button</Button>
+      <Button>Button</Button>
     </Root>
   );
 };
