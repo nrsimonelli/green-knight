@@ -46,7 +46,9 @@ export const Button = styled('button', {
         backgroundColor: 'transparent',
         boxShadow: 'none',
       },
-      hot: {},
+      hot: {
+        color: '$whiteA12',
+      },
     },
     size: {
       1: {
@@ -60,10 +62,6 @@ export const Button = styled('button', {
       3: {
         fontSize: '$3',
         lineHeight: '$3',
-      },
-      4: {
-        fontSize: '$4',
-        lineHeight: '$4',
       },
     },
     color: {
@@ -183,7 +181,6 @@ export const Button = styled('button', {
       type: 'hot',
       css: {
         backgroundColor: '$primary9',
-        color: '$HighContrast',
         '&:hover': {
           backgroundColor: '$primary10',
         },
@@ -194,7 +191,6 @@ export const Button = styled('button', {
       type: 'hot',
       css: {
         backgroundColor: '$secondary9',
-        color: '$HighContrast',
         '&:hover': {
           backgroundColor: '$secondary10',
         },
@@ -205,7 +201,6 @@ export const Button = styled('button', {
       type: 'hot',
       css: {
         backgroundColor: '$accent9',
-        color: '$HighContrast',
         '&:hover': {
           backgroundColor: '$accent10',
         },
@@ -216,7 +211,6 @@ export const Button = styled('button', {
       type: 'hot',
       css: {
         backgroundColor: '$base9',
-        color: '$HighContrast',
         '&:hover': {
           backgroundColor: '$base10',
         },

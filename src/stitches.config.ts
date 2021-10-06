@@ -1,4 +1,5 @@
 import {
+  blackA,
   crimson,
   crimsonDark,
   mauve,
@@ -15,6 +16,7 @@ import {
   tomatoDark,
   violet,
   violetDark,
+  whiteA,
 } from '@radix-ui/colors';
 import { createStitches } from '@stitches/react';
 import type * as Stitches from '@stitches/react';
@@ -31,6 +33,8 @@ export const { styled, config, theme, createTheme, globalCss } =
         ...purpleDark,
         ...violetDark,
         ...mauveDark,
+        ...whiteA,
+        ...blackA,
 
         base1: '$mauve1',
         base2: '$mauve2',
@@ -198,6 +202,8 @@ export const altTheme = createTheme('alt-theme', {
     ...purple,
     ...violet,
     ...mauve,
+    ...whiteA,
+    ...blackA,
 
     // App backgrounds and raised components
     // 1 - 2 - 3

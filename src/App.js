@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { Button } from './components/Button';
-import { globalCss, styled } from './stitches.config';
+import { altTheme, globalCss, styled } from './stitches.config';
 
 const Root = styled('div', {
   display: 'flex',
@@ -20,15 +20,20 @@ const globalStyles = globalCss({
     color: '$HighContrast',
     fontFamily: '$untitled',
     fontSize: '$1',
-    lineHeight: '$1',
+    lineHeight: '1',
   },
 });
 
 const App = () => {
   globalStyles();
+  const [theme, setTheme] = useState('theme-default');
+
+  useEffect(() => {
+    document.body.classList.remove('theme-default', altTheme);
+    document.body.classList.add(theme);
+  }, [theme]);
   return (
     <Root>
-      <div>hello friend</div>
       <Button color='primary' size='1'>
         Button
       </Button>
@@ -38,7 +43,7 @@ const App = () => {
       <Button color='primary' size='3'>
         Button
       </Button>
-      <Button color='primary' type='ghost' size='4'>
+      <Button color='primary' type='ghost' size='1'>
         Button
       </Button>
       <Button color='secondary' size='1'>
@@ -50,7 +55,7 @@ const App = () => {
       <Button color='secondary' size='3'>
         Button
       </Button>
-      <Button color='secondary' type='ghost' size='4'>
+      <Button color='secondary' type='ghost' size='1'>
         Button
       </Button>
       <Button color='accent' size='1'>
@@ -62,7 +67,7 @@ const App = () => {
       <Button color='accent' size='3'>
         Button
       </Button>
-      <Button color='accent' type='ghost' size='4'>
+      <Button color='accent' type='ghost' size='1'>
         Button
       </Button>
       <Button color='neutral' size='1'>
@@ -74,8 +79,18 @@ const App = () => {
       <Button color='neutral' size='3'>
         Button
       </Button>
-      <Button color='neutral' type='ghost' size='4'>
+      <Button color='neutral' type='ghost' size='1'>
         Button
+      </Button>
+      <Button
+        size='2'
+        onClick={() =>
+          setTheme(
+            theme === 'theme-default' ? altTheme : 'theme-default'
+          )
+        }
+      >
+        Theme Toggle
       </Button>
     </Root>
   );
