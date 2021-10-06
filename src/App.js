@@ -5,7 +5,9 @@ import { globalCss, styled } from './stitches.config';
 
 const Root = styled('div', {
   display: 'flex',
-  flexDirection: 'column',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  justifyContent: 'space-between',
   alignItems: 'center',
 });
 
@@ -15,7 +17,7 @@ const globalStyles = globalCss({
     margin: 0,
     padding: 0,
     backgroundColor: '$AppBg1',
-    color: '$LowContrast',
+    color: '$HighContrast',
     fontFamily: '$untitled',
     fontSize: '$1',
     lineHeight: '$1',
@@ -27,8 +29,54 @@ const App = () => {
   return (
     <Root>
       <div>hello friend</div>
-      <Button>Button</Button>
-      <Button>Button</Button>
+      <Button color='primary' size='1'>
+        Button
+      </Button>
+      <Button color='primary' type='hot' size='2'>
+        Button
+      </Button>
+      <Button color='primary' size='3'>
+        Button
+      </Button>
+      <Button color='primary' type='ghost' size='4'>
+        Button
+      </Button>
+      <Button color='secondary' size='1'>
+        Button
+      </Button>
+      <Button color='secondary' type='hot' size='2'>
+        Button
+      </Button>
+      <Button color='secondary' size='3'>
+        Button
+      </Button>
+      <Button color='secondary' type='ghost' size='4'>
+        Button
+      </Button>
+      <Button color='accent' size='1'>
+        Button
+      </Button>
+      <Button color='accent' type='hot' size='2'>
+        Button
+      </Button>
+      <Button color='accent' size='3'>
+        Button
+      </Button>
+      <Button color='accent' type='ghost' size='4'>
+        Button
+      </Button>
+      <Button color='neutral' size='1'>
+        Button
+      </Button>
+      <Button color='neutral' type='hot' size='2'>
+        Button
+      </Button>
+      <Button color='neutral' size='3'>
+        Button
+      </Button>
+      <Button color='neutral' type='ghost' size='4'>
+        Button
+      </Button>
     </Root>
   );
 };

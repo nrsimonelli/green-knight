@@ -91,7 +91,14 @@ export const { styled, config, theme, createTheme, globalCss } =
         LowContrast: '$base11',
         HighContrast: '$base12',
       },
-      space: {},
+      space: {
+        1: '4px',
+        2: '8px',
+        3: '16px',
+        4: '32px',
+        5: '64px',
+        6: '128px',
+      },
       fontSizes: {
         1: '14px',
         2: '24px',
@@ -103,7 +110,12 @@ export const { styled, config, theme, createTheme, globalCss } =
         untitled:
           'Untitled Sans, -apple-system, system-ui, sans-serif',
       },
-      fontWeights: {},
+      fontWeights: {
+        1: 400,
+        2: 500,
+        3: 600,
+        4: 800,
+      },
       lineHeights: {
         1: '22px',
         2: '32px',
@@ -112,13 +124,65 @@ export const { styled, config, theme, createTheme, globalCss } =
         5: '76px',
       },
       letterSpacings: {},
-      sizes: {},
+      sizes: {
+        none: 0,
+        full: '100%',
+        vh: '100vh',
+        vw: '100vw',
+        1: '4px',
+        2: '8px',
+        3: '16px',
+        4: '32px',
+        5: '64px',
+        6: '128px',
+      },
       borderWidths: {},
       borderStyles: {},
-      radii: {},
+      radii: {
+        sharp: '0',
+        dull: '4px',
+        soft: '12px',
+        round: '50%',
+        pill: '9999px',
+      },
       shadows: {},
-      zIndices: {},
+      zIndices: {
+        1: '100',
+        2: '200',
+        3: '300',
+        4: '400',
+        5: '999',
+      },
       transitions: {},
+    },
+    utils: {
+      px: (value: Stitches.PropertyValue<'paddingLeft'>) => ({
+        paddingLeft: value,
+        paddingRight: value,
+      }),
+      py: (value: Stitches.PropertyValue<'paddingTop'>) => ({
+        paddingTop: value,
+        paddingBottom: value,
+      }),
+      mx: (value: Stitches.PropertyValue<'marginLeft'>) => ({
+        marginLeft: value,
+        marginRight: value,
+      }),
+      my: (value: Stitches.PropertyValue<'marginTop'>) => ({
+        marginTop: value,
+        marginBottom: value,
+      }),
+      backgroundClip: (
+        value: Stitches.PropertyValue<'backgroundClip'>
+      ) => ({
+        WebkitBackgroundClip: value,
+        backgroundClip: value,
+      }),
+      linearGradient: (
+        value: Stitches.PropertyValue<'backgroundImage'>
+      ) => ({
+        backgroundImage: `linear-gradient(${value})`,
+      }),
     },
   });
 
