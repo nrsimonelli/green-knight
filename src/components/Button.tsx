@@ -16,13 +16,18 @@ export const Button = styled('button', {
   flexShrink: 0,
   justifyContent: 'center',
   lineHeight: '1',
-  WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+  WebkitTaphighlightColor: 'rgba(0,0,0,0)',
   px: '$3',
   py: '$2',
   margin: '$3',
-  // cursor: 'default',
 
-  // variants as props
+  '&:disabled': {
+    backgroundColor: '$base2',
+    boxShadow: 'inset 0 0 0 1px $colors$base7',
+    color: '$base8',
+    pointerEvents: 'none',
+  },
+
   variants: {
     shape: {
       sharp: {
@@ -47,7 +52,7 @@ export const Button = styled('button', {
         boxShadow: 'none',
       },
       hot: {
-        color: '$whiteA12',
+        color: '$white',
       },
     },
     size: {
@@ -66,8 +71,8 @@ export const Button = styled('button', {
     },
     color: {
       primary: {
-        color: '$primary11',
         backgroundColor: '$primary4',
+        color: '$primary11',
         '&:hover': {
           backgroundColor: '$primary5',
         },
@@ -76,8 +81,8 @@ export const Button = styled('button', {
         },
       },
       secondary: {
-        color: '$secondary11',
         backgroundColor: '$secondary4',
+        color: '$secondary11',
         '&:hover': {
           backgroundColor: '$secondary5',
         },
@@ -86,8 +91,8 @@ export const Button = styled('button', {
         },
       },
       accent: {
-        color: '$accent11',
         backgroundColor: '$accent4',
+        color: '$accent11',
         '&:hover': {
           backgroundColor: '$accent5',
         },
@@ -96,8 +101,8 @@ export const Button = styled('button', {
         },
       },
       neutral: {
-        color: '$base11',
         backgroundColor: '$base4',
+        color: '$base11',
         '&:hover': {
           backgroundColor: '$base5',
         },
@@ -114,7 +119,6 @@ export const Button = styled('button', {
       css: {
         backgroundColor: '$primary1',
         boxShadow: 'inset 0 0 0 1px $colors$primary7',
-        color: '$primary11',
         '&:hover': {
           backgroundColor: '$primary1',
           boxShadow: 'inset 0 0 0 1px $colors$primary8',
@@ -131,7 +135,6 @@ export const Button = styled('button', {
       css: {
         backgroundColor: '$secondary1',
         boxShadow: 'inset 0 0 0 1px $colors$secondary7',
-        color: '$secondary11',
         '&:hover': {
           backgroundColor: '$secondary1',
           boxShadow: 'inset 0 0 0 1px $colors$secondary8',
@@ -148,7 +151,6 @@ export const Button = styled('button', {
       css: {
         backgroundColor: '$accent1',
         boxShadow: 'inset 0 0 0 1px $colors$accent7',
-        color: '$accent11',
         '&:hover': {
           backgroundColor: '$accent1',
           boxShadow: 'inset 0 0 0 1px $colors$accent8',
@@ -165,7 +167,6 @@ export const Button = styled('button', {
       css: {
         backgroundColor: '$base1',
         boxShadow: 'inset 0 0 0 1px $colors$base7',
-        color: '$base11',
         '&:hover': {
           backgroundColor: '$base1',
           boxShadow: 'inset 0 0 0 1px $colors$base8',
@@ -180,6 +181,7 @@ export const Button = styled('button', {
       color: 'primary',
       type: 'hot',
       css: {
+        // color: '$highContrast',
         backgroundColor: '$primary9',
         '&:hover': {
           backgroundColor: '$primary10',
@@ -190,6 +192,7 @@ export const Button = styled('button', {
       color: 'secondary',
       type: 'hot',
       css: {
+        // color: '$highContrast',
         backgroundColor: '$secondary9',
         '&:hover': {
           backgroundColor: '$secondary10',
@@ -200,6 +203,8 @@ export const Button = styled('button', {
       color: 'accent',
       type: 'hot',
       css: {
+        // color: '$highContrast',
+
         backgroundColor: '$accent9',
         '&:hover': {
           backgroundColor: '$accent10',
@@ -210,6 +215,8 @@ export const Button = styled('button', {
       color: 'neutral',
       type: 'hot',
       css: {
+        // color: '$highContrast',
+
         backgroundColor: '$base9',
         '&:hover': {
           backgroundColor: '$base10',

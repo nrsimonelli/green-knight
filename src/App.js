@@ -16,11 +16,11 @@ const globalStyles = globalCss({
     minHeight: '100vh',
     margin: 0,
     padding: 0,
-    backgroundColor: '$AppBg1',
-    color: '$HighContrast',
+    backgroundColor: '$appBg1',
     fontFamily: '$untitled',
     fontSize: '$1',
     lineHeight: '1',
+    color: '$lowContrast',
   },
 });
 
@@ -34,54 +34,43 @@ const App = () => {
   }, [theme]);
   return (
     <Root>
-      <Button color='primary' size='1'>
-        Button
-      </Button>
       <Button color='primary' type='hot' size='2'>
         Button
       </Button>
-      <Button color='primary' size='3'>
+      <Button color='primary' size='2'>
         Button
       </Button>
-      <Button color='primary' type='ghost' size='1'>
-        Button
-      </Button>
-      <Button color='secondary' size='1'>
+      <Button color='primary' type='ghost' size='2'>
         Button
       </Button>
       <Button color='secondary' type='hot' size='2'>
         Button
       </Button>
-      <Button color='secondary' size='3'>
+      <Button color='secondary' size='2'>
         Button
       </Button>
-      <Button color='secondary' type='ghost' size='1'>
-        Button
-      </Button>
-      <Button color='accent' size='1'>
+      <Button color='secondary' type='ghost' size='2'>
         Button
       </Button>
       <Button color='accent' type='hot' size='2'>
         Button
       </Button>
-      <Button color='accent' size='3'>
+      <Button color='accent' size='2'>
         Button
       </Button>
-      <Button color='accent' type='ghost' size='1'>
-        Button
-      </Button>
-      <Button color='neutral' size='1'>
+      <Button color='accent' type='ghost' size='2'>
         Button
       </Button>
       <Button color='neutral' type='hot' size='2'>
         Button
       </Button>
-      <Button color='neutral' size='3'>
+      <Button color='neutral' size='2'>
         Button
       </Button>
-      <Button color='neutral' type='ghost' size='1'>
+      <Button color='neutral' type='ghost' size='2'>
         Button
       </Button>
+
       <Button
         size='2'
         onClick={() =>
@@ -92,6 +81,7 @@ const App = () => {
       >
         Theme Toggle
       </Button>
+      <p>testing this text default</p>
     </Root>
   );
 };

@@ -88,12 +88,15 @@ export const { styled, config, theme, createTheme, globalCss } =
         accent11: '$violet11',
         accent12: '$violet12',
 
-        AppBg1: '$base1',
-        AppBg2: '$base2',
-        AppBg3: '$base9',
-        AppBg4: '$base10',
-        LowContrast: '$base11',
-        HighContrast: '$base12',
+        appBg1: '$base1',
+        appBg2: '$base2',
+        appBg3: '$base9',
+        appBg4: '$base10',
+        lowContrast: '$base11',
+        highContrast: '$base12',
+
+        white: '$whiteA12',
+        black: '$blackA12',
       },
       space: {
         1: '4px',
@@ -269,11 +272,14 @@ export const altTheme = createTheme('alt-theme', {
     accent11: '$violet11',
     accent12: '$violet12',
 
-    AppBg1: '$base1',
-    AppBg2: '$base2',
-    AppBg3: '$base9',
-    AppBg4: '$base10',
-    LowContrast: '$base11',
-    HighContrast: '$base12',
+    appBg1: '$base1',
+    appBg2: '$base2',
+    appBg3: '$base9',
+    appBg4: '$base10',
+    lowContrast: '$base11',
+    highContrast: '$base12',
+
+    white: '$whiteA12',
+    black: '$blackA12',
   },
 });
