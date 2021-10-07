@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { Button } from './components/Button';
+import { Flex } from './components/Flex';
 import { altTheme, globalCss, styled } from './stitches.config';
 
 const Root = styled('div', {
@@ -9,6 +10,14 @@ const Root = styled('div', {
   flexWrap: 'wrap',
   justifyContent: 'space-between',
   alignItems: 'center',
+});
+
+const TestDiv = styled('div', {
+  border: '1px solid red',
+  minHeight: '90vh',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
 });
 
 const globalStyles = globalCss({
@@ -33,56 +42,60 @@ const App = () => {
     document.body.classList.add(theme);
   }, [theme]);
   return (
-    <Root>
-      <Button color='primary' type='hot' size='2'>
-        Button
-      </Button>
-      <Button color='primary' size='2'>
-        Button
-      </Button>
-      <Button color='primary' type='ghost' size='2'>
-        Button
-      </Button>
-      <Button color='secondary' type='hot' size='2'>
-        Button
-      </Button>
-      <Button color='secondary' size='2'>
-        Button
-      </Button>
-      <Button color='secondary' type='ghost' size='2'>
-        Button
-      </Button>
-      <Button color='accent' type='hot' size='2'>
-        Button
-      </Button>
-      <Button color='accent' size='2'>
-        Button
-      </Button>
-      <Button color='accent' type='ghost' size='2'>
-        Button
-      </Button>
-      <Button color='neutral' type='hot' size='2'>
-        Button
-      </Button>
-      <Button color='neutral' size='2'>
-        Button
-      </Button>
-      <Button color='neutral' type='ghost' size='2'>
-        Button
-      </Button>
+    <>
+      <Root>
+        <Button color='primary' type='hot' size='2'>
+          Button
+        </Button>
+        <Button color='primary' size='2'>
+          Button
+        </Button>
+        <Button color='primary' type='ghost' size='2'>
+          Button
+        </Button>
+        <Button color='secondary' type='hot' size='2'>
+          Button
+        </Button>
+        <Button color='secondary' size='2'>
+          Button
+        </Button>
+        <Button color='secondary' type='ghost' size='2'>
+          Button
+        </Button>
+        <Button color='accent' type='hot' size='2'>
+          Button
+        </Button>
+        <Button color='accent' size='2'>
+          Button
+        </Button>
+        <Button color='accent' type='ghost' size='2'>
+          Button
+        </Button>
+        <Button color='neutral' type='hot' size='2'>
+          Button
+        </Button>
+        <Button color='neutral' size='2'>
+          Button
+        </Button>
+        <Button color='neutral' type='ghost' size='2'>
+          Button
+        </Button>
 
-      <Button
-        size='2'
-        onClick={() =>
-          setTheme(
-            theme === 'theme-default' ? altTheme : 'theme-default'
-          )
-        }
-      >
-        Theme Toggle
-      </Button>
-      <p>testing this text default</p>
-    </Root>
+        <Button
+          size='2'
+          onClick={() =>
+            setTheme(
+              theme === 'theme-default' ? altTheme : 'theme-default'
+            )
+          }
+        >
+          Theme Toggle
+        </Button>
+        <p>testing this text default</p>
+      </Root>
+
+      <Flex>hello</Flex>
+    </>
   );
 };
 

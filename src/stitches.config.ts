@@ -102,9 +102,9 @@ export const { styled, config, theme, createTheme, globalCss } =
         1: '4px',
         2: '8px',
         3: '16px',
-        4: '32px',
-        5: '64px',
-        6: '128px',
+        4: '24px',
+        5: '32px',
+        6: '40px',
       },
       fontSizes: {
         1: '14px',
@@ -121,7 +121,6 @@ export const { styled, config, theme, createTheme, globalCss } =
         1: 400,
         2: 500,
         3: 600,
-        4: 800,
       },
       lineHeights: {
         1: '22px',
@@ -161,6 +160,13 @@ export const { styled, config, theme, createTheme, globalCss } =
         5: '999',
       },
       transitions: {},
+    },
+    media: {
+      bp1: '(min-width: 640px)',
+      bp2: '(min-width: 768px)',
+      bp3: '(min-width: 1024px)',
+      bp4: '(min-width: 1280px)',
+      bp5: '(min-width: 1536px)',
     },
     utils: {
       px: (value: Stitches.PropertyValue<'paddingLeft'>) => ({

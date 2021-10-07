@@ -19,7 +19,6 @@ export const Button = styled('button', {
   WebkitTaphighlightColor: 'rgba(0,0,0,0)',
   px: '$3',
   py: '$2',
-  margin: '$3',
 
   '&:disabled': {
     backgroundColor: '$base2',
@@ -52,7 +51,7 @@ export const Button = styled('button', {
         boxShadow: 'none',
       },
       hot: {
-        color: '$white',
+        fontWeight: '$2',
       },
     },
     size: {
@@ -181,7 +180,7 @@ export const Button = styled('button', {
       color: 'primary',
       type: 'hot',
       css: {
-        // color: '$highContrast',
+        color: '$white',
         backgroundColor: '$primary9',
         '&:hover': {
           backgroundColor: '$primary10',
@@ -192,7 +191,7 @@ export const Button = styled('button', {
       color: 'secondary',
       type: 'hot',
       css: {
-        // color: '$highContrast',
+        color: '$white',
         backgroundColor: '$secondary9',
         '&:hover': {
           backgroundColor: '$secondary10',
@@ -203,8 +202,7 @@ export const Button = styled('button', {
       color: 'accent',
       type: 'hot',
       css: {
-        // color: '$highContrast',
-
+        color: '$white',
         backgroundColor: '$accent9',
         '&:hover': {
           backgroundColor: '$accent10',
@@ -215,8 +213,7 @@ export const Button = styled('button', {
       color: 'neutral',
       type: 'hot',
       css: {
-        // color: '$highContrast',
-
+        color: '$white',
         backgroundColor: '$base9',
         '&:hover': {
           backgroundColor: '$base10',
@@ -226,5 +223,7 @@ export const Button = styled('button', {
   ],
   defaultVariants: {
     shape: 'dull',
+    color: 'base',
+    size: '1',
   },
 });

@@ -3,6 +3,8 @@ import { styled } from '../stitches.config';
 export const Flex = styled('div', {
   boxSizing: 'border-box',
   display: 'flex',
+  linearGradient:
+    'to bottom right, $colors$secondary9, $colors$accent9',
 
   variants: {
     direction: {
