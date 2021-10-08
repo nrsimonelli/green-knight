@@ -99,7 +99,7 @@ export const Button = styled('button', {
           backgroundColor: '$accent6',
         },
       },
-      neutral: {
+      base: {
         backgroundColor: '$base4',
         color: '$base11',
         '&:hover': {
@@ -161,7 +161,7 @@ export const Button = styled('button', {
       },
     },
     {
-      color: 'neutral',
+      color: 'base',
       type: 'ghost',
       css: {
         backgroundColor: '$base1',
@@ -210,7 +210,7 @@ export const Button = styled('button', {
       },
     },
     {
-      color: 'neutral',
+      color: 'base',
       type: 'hot',
       css: {
         color: '$white',

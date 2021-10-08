@@ -1,25 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import { Button } from './components/Button';
 import { Flex } from './components/Flex';
-import { altTheme, globalCss, styled } from './stitches.config';
-import { ThemeToggle } from './ThemeToggle/ThemeToggle';
+import { Container } from './components/Container';
+import { globalCss } from './stitches.config';
 
-const Root = styled('div', {
-  display: 'flex',
-  flexDirection: 'row',
-  flexWrap: 'wrap',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-});
-
-const TestDiv = styled('div', {
-  border: '1px solid red',
-  minHeight: '90vh',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-});
+import { Nav } from './Nav/Nav';
 
 const globalStyles = globalCss({
   body: {
@@ -30,7 +16,7 @@ const globalStyles = globalCss({
     fontFamily: '$untitled',
     fontSize: '$1',
     lineHeight: '1',
-    color: '$lowContrast',
+    color: '$highContrast',
   },
 });
 
@@ -39,14 +25,36 @@ const App = () => {
 
   return (
     <>
-      <Root>
-        <Button>Button</Button>
+      <Nav />
 
-        <ThemeToggle />
-        <Button>Button</Button>
-      </Root>
+      <Flex>
+        <Container responsive screen>
+          <div>hello paragraph</div>
+          <Button color='primary' type='hot' size='1'>
+            Button
+          </Button>
+          <Button color='secondary' type='hot' size='2'>
+            Button
+          </Button>
+          <Button color='accent' type='hot' size='3'>
+            Button
+          </Button>
+          <Button color='base' type='hot' size='1'>
+            Button
+          </Button>
+        </Container>
+      </Flex>
 
-      <Flex>hello</Flex>
+      <Flex direction='column' align='center' justify='center'>
+        1
+      </Flex>
+      <Flex>2</Flex>
+      <Flex>3</Flex>
+
+      <Container>2</Container>
+      <Container>3</Container>
+      <Container>4</Container>
+      <Container>5</Container>
     </>
   );
 };
