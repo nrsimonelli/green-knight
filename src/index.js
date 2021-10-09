@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ThemeProvider } from './ThemeToggle/ThemeContext';
+import { ThemeProvider } from './components/ThemeToggle/ThemeContext';
 
 ReactDOM.render(
   <ThemeProvider>

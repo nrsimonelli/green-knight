@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { Button } from '../components/Button';
-import { altTheme } from '../stitches.config';
+import { Button } from '../Button';
+import { altTheme } from '../../stitches.config';
 import { ThemeContext } from './ThemeContext';
 import { RiSunLine } from 'react-icons/ri';
 

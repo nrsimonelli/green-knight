@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, FC, useState } from 'react';
-import { altTheme } from '../stitches.config';
+import { altTheme } from '../../stitches.config';
 
 const getInitialTheme = () => {
   if (typeof window !== 'undefined' && window.localStorage) {

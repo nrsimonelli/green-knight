@@ -6,7 +6,7 @@ import { Text } from './components/Text';
 import { Container } from './components/Container';
 import { globalCss } from './stitches.config';
 
-import { Nav } from './Nav/Nav';
+import { Nav } from './components/Nav/Nav';
 
 const globalStyles = globalCss({
   body: {

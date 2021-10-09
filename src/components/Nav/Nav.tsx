@@ -1,10 +1,10 @@
 import React from 'react';
 import { RiAnchorFill } from 'react-icons/ri';
-import { Container } from '../components/Container';
-import { Flex } from '../components/Flex';
-import { Text } from '../components/Text';
+import { Container } from '../Container';
+import { Flex } from '../Flex';
+import { Text } from '../Text';
 import { ThemeToggle } from '../ThemeToggle/ThemeToggle';
-import { LINK_TREE } from '../constants';
+import { LINK_TREE } from '../../constants';
 
 export const Nav = () => {
   return (
