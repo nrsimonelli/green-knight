@@ -9,8 +9,6 @@ export const Container = styled('div', {
   width: '100%',
   maxWidth: 'none',
 
-  linearGradient: 'to bottom right, $colors$primary3, $colors$base9',
-
   variants: {
     responsive: {
       true: {

@@ -17,8 +17,8 @@ export const Button = styled('button', {
   justifyContent: 'center',
   lineHeight: '1',
   WebkitTaphighlightColor: 'rgba(0,0,0,0)',
-  px: '$3',
-  py: '$2',
+  px: '$2',
+  py: '$1',
 
   '&:disabled': {
     backgroundColor: '$base2',

@@ -2,28 +2,28 @@ import React, { useContext } from 'react';
 import { Button } from '../components/Button';
 import { altTheme } from '../stitches.config';
 import { ThemeContext } from './ThemeContext';
-import {
-  RiMoonClearLine,
-  RiSafariFill,
-  RiSunCloudyLine,
-  RiSunLine,
-} from 'react-icons/ri';
+import { RiSunLine } from 'react-icons/ri';
 
-export const ThemeToggle = ({
-  size = '1',
-  color = 'primary',
-  type = 'ghost',
-  shape = 'dull',
-  children = <RiSunLine />,
-}) => {
+type Props = {
+  children?: object | string;
+};
+
+export const ThemeToggle = ({ children = <RiSunLine /> }: Props) => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (
     <Button
-      size={size}
-      color={color}
-      type={type}
-      shape={shape}
+      size='1'
+      type='ghost'
+      shape='dull'
+      color='accent'
+      css={{
+        backgroundColor: 'transparent',
+        py: '$2',
+        '&:hover': {
+          backgroundColor: '$overlay4',
+        },
+      }}
       onClick={() =>
         setTheme(
           theme === altTheme.className
