@@ -64,7 +64,7 @@ export const Text = styled('div', {
         color: '$violet11',
       },
       contrast: {
-        color: '$hiContrast',
+        color: '$highContrast',
       },
       lowContrast: {
         color: '$lowContrast',
@@ -74,6 +74,20 @@ export const Text = styled('div', {
       },
       white: {
         color: '$whiteA11',
+      },
+    },
+    case: {
+      upper: {
+        textTransform: 'uppercase',
+      },
+      lower: {
+        textTransform: 'lowercase',
+      },
+      capitalize: {
+        textTransform: 'capitalize',
+      },
+      initial: {
+        textTransform: 'initial',
       },
     },
     gradient: {
@@ -130,7 +144,7 @@ export const Text = styled('div', {
       color: 'contrast',
       gradient: 'true',
       css: {
-        linearGradient: 'to right, $lowContrast, $hiContrast',
+        linearGradient: 'to right, $lowContrast, $highContrast',
       },
     },
     {
@@ -152,5 +166,6 @@ export const Text = styled('div', {
     size: '1',
     weight: '1',
     color: 'contrast',
+    case: 'initial',
   },
 });

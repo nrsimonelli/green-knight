@@ -20,6 +20,7 @@ export const ThemeToggle = ({ children = <RiSunLine /> }: Props) => {
       css={{
         backgroundColor: 'transparent',
         py: '$2',
+        ml: '$2',
         '&:hover': {
           backgroundColor: '$overlay4',
         },
