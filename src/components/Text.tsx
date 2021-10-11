@@ -165,7 +165,41 @@ export const Text = styled('div', {
   defaultVariants: {
     size: '1',
     weight: '1',
-    color: 'contrast',
+    color: 'lowContrast',
     case: 'initial',
+  },
+});
+
+export const TextTitle = styled(Text, {
+  defaultVariants: {
+    size: '3',
+    weight: '1',
+    color: 'contrast',
+    case: 'upper',
+  },
+});
+export const TextHead = styled(Text, {
+  defaultVariants: {
+    size: '2',
+    weight: '1',
+    color: 'contrast',
+    case: 'capitalize',
+  },
+});
+export const TextSub = styled(Text, {
+  defaultVariants: {
+    size: '1',
+    weight: '3',
+    color: 'contrast',
+    case: 'capitalize',
+  },
+});
+
+export const TextGradient = styled(Text, {
+  defaultVariants: {
+    gradient: true,
+    color: 'purple',
+    size: '1',
+    weight: '1',
   },
 });
