@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Button } from './components/Button';
 import { Flex } from './components/Flex';
@@ -21,8 +21,31 @@ const globalStyles = globalCss({
   },
 });
 
+const buttonName = ['primary', 'secondary', 'accent', 'base'];
+const shapeOptions = ['sharp', 'dull', 'soft', 'pill'];
+
 const App = () => {
   globalStyles();
+
+  const [buttonSize, setButtonSize] = useState(1);
+  const [buttonShape, setButtonShape] = useState(0);
+
+  const handleButtonSizeChange = () => {
+    if (buttonSize === 3) {
+      setButtonSize(1);
+    } else {
+      setButtonSize(buttonSize + 1);
+    }
+  };
+  const handleButtonShapeChange = () => {
+    if (buttonShape === 3) {
+      setButtonShape(0);
+    } else {
+      setButtonShape(buttonShape + 1);
+    }
+  };
+
+  const buttonLabelWidth = 75 + 25 * buttonSize;
 
   return (
     <>
@@ -30,20 +53,70 @@ const App = () => {
 
       <Flex>
         <Container responsive screen>
-          <div>hello paragraph</div>
-          <Button color='primary' type='hot' size='1'>
-            Button
-          </Button>
-          <Button color='secondary' type='hot' size='2'>
-            Button
-          </Button>
-          <Button color='accent' type='hot' size='3'>
-            Button
-          </Button>
-          <Button color='base' type='hot' size='1'>
-            Button
-          </Button>
-          <div>hello there</div>
+          <Flex css={{ mt: '$3' }}>
+            <Text size='2' css={{ mr: '$4' }}>
+              Buttons
+            </Text>
+            <Button
+              type='ghost'
+              color='accent'
+              onClick={handleButtonSizeChange}
+              size='1'
+              css={{ px: '$3', mr: '$3' }}
+            >{`${buttonSize}`}</Button>
+            <Button
+              type='ghost'
+              color='accent'
+              onClick={handleButtonShapeChange}
+              size='1'
+              css={{ textTransform: 'capitalize', px: '$3' }}
+            >
+              {shapeOptions[buttonShape]}
+            </Button>
+          </Flex>
+          {buttonName.map((label, index) => (
+            <Flex
+              direction='row'
+              align='end'
+              css={{ mt: '$2', p: '$2', '& > Button': { mr: '$3' } }}
+            >
+              <Button
+                size={buttonSize}
+                shape={shapeOptions[buttonShape]}
+                type='hot'
+                color={label}
+                css={{
+                  textTransform: 'capitalize',
+                  width: `${buttonLabelWidth}px`,
+                }}
+              >
+                {buttonName[index]}
+              </Button>
+              <Button
+                size={buttonSize}
+                shape={shapeOptions[buttonShape]}
+                color={label}
+              >
+                Default
+              </Button>
+              <Button
+                size={buttonSize}
+                shape={shapeOptions[buttonShape]}
+                color={label}
+                type='ghost'
+              >
+                Ghost
+              </Button>
+              <Button
+                size={buttonSize}
+                shape={shapeOptions[buttonShape]}
+                color={label}
+                disabled
+              >
+                Disabled
+              </Button>
+            </Flex>
+          ))}
           <Text
             css={{
               my: '$3',
