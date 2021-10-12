@@ -16,13 +16,14 @@ export const ThemeToggle = ({ children = <RiSunLine /> }: Props) => {
       size='1'
       type='ghost'
       shape='dull'
-      color='accent'
+      color='base'
       css={{
         backgroundColor: 'transparent',
         py: '$2',
         ml: '$2',
+        boxShadow: 'none',
         '&:hover': {
-          backgroundColor: '$overlay4',
+          backgroundColor: '$appBg2',
         },
       }}
       onClick={() =>

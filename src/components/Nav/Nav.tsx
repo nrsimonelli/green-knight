@@ -8,10 +8,7 @@ import { LINK_TREE } from '../../constants';
 
 export const Nav = () => {
   return (
-    <Flex
-      align='center'
-      css={{ height: '$5', backgroundColor: '$primary6' }}
-    >
+    <Flex align='center' css={{ height: '$5' }}>
       <Container css={{ height: '$full' }}>
         <Flex align='center' css={{ height: '$full' }}>
           <Flex css={{ flexBasis: 'max-content' }}>

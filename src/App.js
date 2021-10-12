@@ -15,6 +15,7 @@ import { Nav } from './components/Nav/Nav';
 
 const globalStyles = globalCss({
   body: {
+    transition: 'all 200ms ease-in-out 0s',
     minHeight: '100vh',
     margin: 0,
     padding: 0,
