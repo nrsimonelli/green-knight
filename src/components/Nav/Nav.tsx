@@ -1,12 +1,24 @@
 import React from 'react';
-import { RiAnchorFill } from 'react-icons/ri';
+import { RiDropFill } from 'react-icons/ri';
 import { Container } from '../Container';
 import { Flex } from '../Flex';
 import { Text, TextSub } from '../Text';
 import { ThemeToggle } from '../ThemeToggle/ThemeToggle';
 import { LINK_TREE } from '../../constants';
 
-export const Nav = () => {
+type Props = {
+  Title?: string;
+  Logo?: object | string;
+  Links?: object;
+  Toggle?: boolean;
+};
+
+export const Nav = ({
+  Title = 'untitled',
+  Logo = <RiDropFill />,
+  Links = LINK_TREE,
+  Toggle = false,
+}: Props) => {
   return (
     <Flex align='center' css={{ height: '$5' }}>
       <Container css={{ height: '$full' }}>
@@ -19,7 +31,7 @@ export const Nav = () => {
               weight='2'
               case='capitalize'
             >
-              untitled
+              {Title}
             </Text>
             <Text
               size='2'
@@ -30,7 +42,7 @@ export const Nav = () => {
                 mx: '$3',
               }}
             >
-              <RiAnchorFill />
+              {Logo}
             </Text>
           </Flex>
           <Flex align='center' justify='end' css={{ flexGrow: '7' }}>

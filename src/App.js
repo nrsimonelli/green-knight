@@ -124,12 +124,39 @@ const App = () => {
 
   return (
     <>
-      <Nav />
+      <Nav Title='hello' />
       <Flex>
         <Container static='2' screen>
           <ButtonDemo />
           <Flex direction='column'>
-            <TextTitle case='initial'>Interoperability</TextTitle>
+            <Flex
+              direction='row'
+              align='end'
+              justify='start'
+              wrap='wrap'
+            >
+              <Text color='contrast' size='1'>
+                14px
+              </Text>
+              <Text color='contrast' size='2'>
+                24px
+              </Text>
+              <Text color='contrast' size='3'>
+                30px
+              </Text>
+              <Text color='contrast' size='4'>
+                56px
+              </Text>
+              <Text color='contrast' size='5'>
+                68px
+              </Text>
+            </Flex>
+            <TextTitle case='capitalize'>title</TextTitle>
+            <TextHead case='capitalize'>heading</TextHead>
+            <TextSub case='capitalize'>subheading</TextSub>
+            <Text case='capitalize'>text</Text>
+
+            <TextTitle case='initial'>Lorem</TextTitle>
 
             <Text color='contrast'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -176,46 +203,6 @@ const App = () => {
               donec.
             </Text>
 
-            <TextHead>Rhoncus aenean</TextHead>
-            <Text>
-              Posuere sollicitudin aliquam ultrices sagittis orci. In
-              egestas erat imperdiet sed euismod nisi porta lorem
-              mollis. Sollicitudin nibh sit amet commodo nulla
-              facilisi nullam. Posuere morbi leo urna molestie at.
-              Urna neque viverra justo nec. Dignissim convallis aenean
-              et tortor at risus viverra adipiscing at. Ultricies mi
-              eget mauris pharetra et ultrices neque ornare aenean.
-              Pellentesque dignissim enim sit amet venenatis urna
-              cursus eget nunc. Enim neque volutpat ac tincidunt vitae
-              semper quis. Sapien eget mi proin sed libero. Justo nec
-              ultrices dui sapien eget mi proin. Enim ut sem viverra
-              aliquet eget sit. Ultrices vitae auctor eu augue ut
-              lectus arcu bibendum. Sed odio morbi quis commodo odio
-              aenean sed adipiscing diam. Sodales ut eu sem integer
-              vitae justo eget. Sed enim ut sem viverra.
-            </Text>
-            <Text>
-              Ullamcorper eget nulla facilisi etiam dignissim diam
-              quis. Amet mattis vulputate enim nulla. Ullamcorper sit
-              amet risus nullam eget felis eget nunc. Nisl nunc mi
-              ipsum faucibus vitae aliquet nec. Ipsum dolor sit amet
-              consectetur adipiscing elit. Diam sollicitudin tempor id
-              eu nisl nunc mi ipsum. Et ligula ullamcorper malesuada
-              proin libero. Nisl pretium fusce id velit ut tortor.
-              Tortor condimentum lacinia quis vel eros donec ac odio.
-              Urna duis convallis convallis tellus. Amet consectetur
-              adipiscing elit duis tristique sollicitudin nibh sit
-              amet. Enim blandit volutpat maecenas volutpat blandit
-              aliquam etiam erat velit. Quis hendrerit dolor magna
-              eget est lorem ipsum. Sollicitudin tempor id eu nisl.
-              Egestas congue quisque egestas diam in arcu cursus.
-              Scelerisque mauris pellentesque pulvinar pellentesque
-              habitant morbi tristique senectus et. Tempus quam
-              pellentesque nec nam aliquam sem et tortor consequat.
-              Velit scelerisque in dictum non. Egestas quis ipsum
-              suspendisse ultrices gravida dictum fusce ut. Massa enim
-              nec dui nunc mattis enim.
-            </Text>
             <TextHead>Odio morbi quis</TextHead>
             <Text>
               Sociis natoque penatibus et magnis dis parturient montes
@@ -259,12 +246,6 @@ const App = () => {
           </Text>
         </Container>
       </Flex>
-
-      <Flex direction='column' align='center' justify='center'>
-        1
-      </Flex>
-
-      <Flex>3</Flex>
     </>
   );
 };
