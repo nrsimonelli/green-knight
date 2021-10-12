@@ -6,6 +6,8 @@ export const Text = styled('div', {
   margin: '0',
   fontVariantNumeric: 'tabular-nums',
   display: 'block',
+  // border: '1px solid $base12',
+  py: '$2',
 
   variants: {
     size: {
@@ -173,7 +175,7 @@ export const Text = styled('div', {
 export const TextTitle = styled(Text, {
   defaultVariants: {
     size: '3',
-    weight: '1',
+    weight: '3',
     color: 'contrast',
     case: 'upper',
   },
@@ -181,7 +183,7 @@ export const TextTitle = styled(Text, {
 export const TextHead = styled(Text, {
   defaultVariants: {
     size: '2',
-    weight: '1',
+    weight: '2',
     color: 'contrast',
     case: 'capitalize',
   },
@@ -192,14 +194,5 @@ export const TextSub = styled(Text, {
     weight: '3',
     color: 'contrast',
     case: 'capitalize',
-  },
-});
-
-export const TextGradient = styled(Text, {
-  defaultVariants: {
-    gradient: true,
-    color: 'purple',
-    size: '1',
-    weight: '1',
   },
 });

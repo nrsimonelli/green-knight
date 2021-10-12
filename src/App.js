@@ -4,13 +4,12 @@ import { Button } from './components/Button';
 import { Flex } from './components/Flex';
 import {
   Text,
-  TextGradient,
   TextHead,
   TextSub,
   TextTitle,
 } from './components/Text';
 import { Container } from './components/Container';
-import { globalCss, styled } from './stitches.config';
+import { globalCss } from './stitches.config';
 
 import { Nav } from './components/Nav/Nav';
 
@@ -63,14 +62,14 @@ const App = () => {
             color='accent'
             onClick={handleButtonSizeChange}
             size='1'
-            css={{ px: '$3', mr: '$3' }}
+            css={{ px: '$4', mr: '$3' }}
           >{`${buttonSize}`}</Button>
           <Button
             type='ghost'
             color='accent'
             onClick={handleButtonShapeChange}
             size='1'
-            css={{ textTransform: 'capitalize', px: '$3' }}
+            css={{ textTransform: 'capitalize', px: '$4' }}
           >
             {shapeOptions[buttonShape]}
           </Button>
@@ -126,151 +125,137 @@ const App = () => {
     <>
       <Nav />
       <Flex>
-        <Container responsive screen>
+        <Container static='2' screen>
           <ButtonDemo />
           <Flex direction='column'>
-            <TextTitle case='initial'>Title Text</TextTitle>
-            <TextHead>Heading</TextHead>
-            <TextSub>Sub Heading</TextSub>
-            <Text color='contrast'>Important Text</Text>
-            <TextGradient>Colorful text</TextGradient>
-            <Text>Default text</Text>
+            <TextTitle case='initial'>Interoperability</TextTitle>
+
+            <Text color='contrast'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </Text>
+            <TextHead>Temet Nosce</TextHead>
+            <Text>
+              Morbi tempus iaculis urna id volutpat. Arcu non odio
+              euismod lacinia at. Pellentesque habitant morbi
+              tristique senectus et. Auctor augue mauris augue neque
+              gravida in fermentum. Ac turpis egestas integer eget
+              aliquet nibh praesent. Faucibus et molestie ac feugiat
+              sed lectus vestibulum mattis. Pretium fusce id velit ut
+              tortor pretium viverra suspendisse potenti. Quis auctor
+              elit sed vulputate mi. Enim ut sem viverra aliquet. Quis
+              enim lobortis scelerisque fermentum dui faucibus in. Sed
+              egestas egestas fringilla phasellus.
+            </Text>
+            <Text>
+              Neque egestas congue quisque egestas diam in arcu
+              cursus. Dictumst quisque sagittis purus sit amet
+              volutpat. Pretium fusce id velit ut tortor. Adipiscing
+              enim eu turpis egestas pretium aenean pharetra. Id diam
+              vel quam elementum. Rhoncus est pellentesque elit
+              ullamcorper dignissim cras tincidunt. Et tortor
+              consequat id porta. Lobortis scelerisque fermentum dui
+              faucibus in. Viverra maecenas accumsan lacus vel
+              facilisis volutpat. Ornare lectus sit amet est placerat
+              in egestas erat. Purus viverra accumsan in nisl nisi
+              scelerisque eu ultrices. Mi eget mauris pharetra et
+              ultrices. Vitae et leo duis ut diam quam nulla. Egestas
+              diam in arcu cursus. Amet risus nullam eget felis eget
+              nunc lobortis mattis aliquam. Quis ipsum suspendisse
+              ultrices gravida dictum fusce. Sed risus ultricies
+              tristique nulla aliquet enim. Fermentum dui faucibus in
+              ornare quam viverra orci. Amet dictum sit amet justo
+              donec.
+            </Text>
+
+            <TextHead>Rhoncus aenean</TextHead>
+            <Text>
+              Posuere sollicitudin aliquam ultrices sagittis orci. In
+              egestas erat imperdiet sed euismod nisi porta lorem
+              mollis. Sollicitudin nibh sit amet commodo nulla
+              facilisi nullam. Posuere morbi leo urna molestie at.
+              Urna neque viverra justo nec. Dignissim convallis aenean
+              et tortor at risus viverra adipiscing at. Ultricies mi
+              eget mauris pharetra et ultrices neque ornare aenean.
+              Pellentesque dignissim enim sit amet venenatis urna
+              cursus eget nunc. Enim neque volutpat ac tincidunt vitae
+              semper quis. Sapien eget mi proin sed libero. Justo nec
+              ultrices dui sapien eget mi proin. Enim ut sem viverra
+              aliquet eget sit. Ultrices vitae auctor eu augue ut
+              lectus arcu bibendum. Sed odio morbi quis commodo odio
+              aenean sed adipiscing diam. Sodales ut eu sem integer
+              vitae justo eget. Sed enim ut sem viverra.
+            </Text>
+            <Text>
+              Ullamcorper eget nulla facilisi etiam dignissim diam
+              quis. Amet mattis vulputate enim nulla. Ullamcorper sit
+              amet risus nullam eget felis eget nunc. Nisl nunc mi
+              ipsum faucibus vitae aliquet nec. Ipsum dolor sit amet
+              consectetur adipiscing elit. Diam sollicitudin tempor id
+              eu nisl nunc mi ipsum. Et ligula ullamcorper malesuada
+              proin libero. Nisl pretium fusce id velit ut tortor.
+              Tortor condimentum lacinia quis vel eros donec ac odio.
+              Urna duis convallis convallis tellus. Amet consectetur
+              adipiscing elit duis tristique sollicitudin nibh sit
+              amet. Enim blandit volutpat maecenas volutpat blandit
+              aliquam etiam erat velit. Quis hendrerit dolor magna
+              eget est lorem ipsum. Sollicitudin tempor id eu nisl.
+              Egestas congue quisque egestas diam in arcu cursus.
+              Scelerisque mauris pellentesque pulvinar pellentesque
+              habitant morbi tristique senectus et. Tempus quam
+              pellentesque nec nam aliquam sem et tortor consequat.
+              Velit scelerisque in dictum non. Egestas quis ipsum
+              suspendisse ultrices gravida dictum fusce ut. Massa enim
+              nec dui nunc mattis enim.
+            </Text>
+            <TextHead>Odio morbi quis</TextHead>
+            <Text>
+              Sociis natoque penatibus et magnis dis parturient montes
+              nascetur ridiculus. Praesent semper feugiat nibh sed
+              pulvinar proin gravida. Velit aliquet sagittis id
+              consectetur purus ut faucibus pulvinar elementum. Eu
+              facilisis sed odio morbi quis. Tristique sollicitudin
+              nibh sit amet commodo nulla. Nibh sed pulvinar proin
+              gravida hendrerit lectus a. Arcu dictum varius duis at
+              consectetur lorem donec. Vitae aliquet nec ullamcorper
+              sit amet risus nullam eget felis. Venenatis lectus magna
+              fringilla urna porttitor rhoncus. Sed risus ultricies
+              tristique nulla aliquet enim tortor at. Volutpat
+              consequat mauris nunc congue nisi vitae suscipit tellus
+              mauris. Enim nunc faucibus a pellentesque sit amet
+              porttitor eget. Magna etiam tempor orci eu. Adipiscing
+              at in tellus integer feugiat scelerisque varius. Sed
+              augue lacus viverra vitae congue eu consequat. Maecenas
+              ultricies mi eget mauris.
+            </Text>
+            <TextSub>more info</TextSub>
           </Flex>
-          <Flex wrap='wrap'>
-            <Text
-              css={{
-                my: '$3',
-                width: '$full',
-              }}
-              size='1'
-            >
-              The water temperature in the Atlantic is also greatly
-              affected by currents, most notably the Gulf Stream.
-            </Text>
-            <Text
-              css={{
-                my: '$3',
-              }}
-              size='1'
-              color='lowContrast'
-            >
-              Variants are an excellent way to express how a component
-              could look. It allows us to separate our design concerns
-              into isolated rules.{' '}
-            </Text>
-            <Text
-              css={{
-                my: '$3',
-              }}
-              size={{
-                '@initial': '1',
-                '@bp1': '2',
-                '@bp2': '3',
-              }}
-              color='pink'
-              gradient='true'
-            >
-              At the time, we were creating faux variants on top of
-              existing styling solutions. However, the result wasn't
-              ideal. We needed an interoperable solution, so both
-              designers and developers could work on the same source
-              of truth.{' '}
-            </Text>
-            <Text
-              css={{
-                my: '$3',
-              }}
-              size='1'
-              color='purple'
-              gradient='true'
-            >
-              It introduces a first-class variant API, enabling design
-              system authors to express their intent better. It's
-              fully typed, catching potential mistakes and improving
-              the scalability of design systems. It's lightweight,
-              coming in at less than 5kb. And finally, it's a breeze
-              to get up and running with it.{' '}
-            </Text>
-            <Text
-              css={{
-                my: '$3',
-              }}
-              size='2'
-              color='tomato'
-              gradient='true'
-            >
-              Stitches offers a first-class API for creating variants.
-              Because of this, they're automatically typed.{' '}
-            </Text>
-            <Text
-              css={{
-                my: '$3',
-              }}
-              size='2'
-              color='crimson'
-              gradient='true'
-            >
-              The water temperature in the Atlantic is also greatly
-              affected by currents, most notably the Gulf Stream.
-            </Text>
-            <Text
-              css={{
-                my: '$3',
-              }}
-              size='2'
-              color='red'
-              gradient='true'
-            >
-              Notice how currently there are some base styles and some
-              variant styles. This creates some implicit variants. Let
-              me explain...{' '}
-            </Text>
-            <Text
-              css={{
-                my: '$3',
-              }}
-              size='2'
-              color='plum'
-              gradient='true'
-            >
-              The water temperature in the Atlantic is also greatly
-              affected by currents, most notably the Gulf Stream.
-            </Text>
-            <Text
-              css={{
-                my: '$3',
-              }}
-              size='2'
-              color='contrast'
-              gradient='true'
-            >
-              When you separate your stylistic concerns into variants,
-              you need to explicitly tell your component which variant
-              to use.{' '}
-            </Text>
-            <Text
-              css={{
-                my: '$3',
-              }}
-              size='2'
-              color='white'
-              gradient='true'
-            >
-              But you can define default variants, essentially
-              mimicking the base styles behaviour—without compromises.{' '}
-            </Text>
-            <Text
-              css={{
-                my: '$3',
-              }}
-              size='2'
-              color='black'
-              gradient='true'
-            >
-              The water temperature in the Atlantic is also greatly
-              affected by currents, most notably the Gulf Stream.
-            </Text>
-          </Flex>
+
+          <Text
+            css={{
+              my: '$3',
+            }}
+            size={{
+              '@initial': '1',
+              '@bp1': '2',
+              '@bp2': '3',
+            }}
+            color='pink'
+            gradient='true'
+          >
+            At the time, we were creating faux variants on top of
+            existing styling solutions. However, the result wasn't
+            ideal. We needed an interoperable solution, so both
+            designers and developers could work on the same source of
+            truth.{' '}
+          </Text>
         </Container>
       </Flex>
 

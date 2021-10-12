@@ -5,7 +5,7 @@ export const Flex = styled('div', {
   display: 'flex',
 
   // testing only
-  boxShadow: 'inset 0 0 0 1px $colors$primary8',
+  // boxShadow: 'inset 0 0 0 1px $colors$primary8',
 
   variants: {
     direction: {

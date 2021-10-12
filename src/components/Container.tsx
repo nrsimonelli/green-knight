@@ -5,7 +5,7 @@ export const Container = styled('div', {
   boxSizing: 'border-box',
   flexShrink: 0,
   mx: 'auto',
-  px: '$3',
+  px: '$4',
   width: '100%',
   maxWidth: 'none',
 
