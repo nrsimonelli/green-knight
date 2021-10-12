@@ -14,28 +14,28 @@ export const Container = styled('div', {
 
   variants: {
     static: {
-      1: { maxWidth: '$max1' },
-      2: { maxWidth: '$max2' },
-      3: { maxWidth: '$max3' },
-      4: { maxWidth: '$max4' },
-      5: { maxWidth: '$max5' },
+      1: { maxWidth: '$s1' },
+      2: { maxWidth: '$s2' },
+      3: { maxWidth: '$s3' },
+      4: { maxWidth: '$s4' },
+      5: { maxWidth: '$s5' },
     },
     responsive: {
       true: {
         '@bp1': {
-          maxWidth: '$max1',
+          maxWidth: '$s1',
         },
         '@bp2': {
-          maxWidth: '$max2',
+          maxWidth: '$s2',
         },
         '@bp3': {
-          maxWidth: '$max3',
+          maxWidth: '$s3',
         },
         '@bp4': {
-          maxWidth: '$max4',
+          maxWidth: '$s4',
         },
         '@bp5': {
-          maxWidth: '$max5',
+          maxWidth: '$s5',
         },
       },
     },
