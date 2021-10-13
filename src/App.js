@@ -23,7 +23,7 @@ const globalStyles = globalCss({
     fontFamily: '$untitled',
     fontSize: '$1',
     lineHeight: '1',
-    color: '$highContrast',
+    color: '$hiContrast',
   },
 });
 
@@ -77,6 +77,7 @@ const App = () => {
         </Flex>
         {buttonName.map((label, index) => (
           <Flex
+            key={index}
             direction='row'
             align='end'
             css={{ mt: '$2', p: '$2', '& > Button': { mr: '$3' } }}
@@ -135,19 +136,19 @@ const App = () => {
               justify='start'
               wrap='wrap'
             >
-              <Text color='contrast' size='1'>
+              <Text color='hiContrast' size='1'>
                 14px
               </Text>
-              <Text color='contrast' size='2'>
+              <Text color='hiContrast' size='2'>
                 24px
               </Text>
-              <Text color='contrast' size='3'>
+              <Text color='hiContrast' size='3'>
                 30px
               </Text>
-              <Text color='contrast' size='4'>
+              <Text color='hiContrast' size='4'>
                 56px
               </Text>
-              <Text color='contrast' size='5'>
+              <Text color='hiContrast' size='5'>
                 68px
               </Text>
             </Flex>
@@ -158,7 +159,7 @@ const App = () => {
 
             <TextTitle case='initial'>Lorem</TextTitle>
 
-            <Text color='contrast'>
+            <Text color='hiContrast'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -235,7 +236,7 @@ const App = () => {
               '@bp1': '2',
               '@bp2': '3',
             }}
-            color='pink'
+            color='primary'
             gradient='true'
           >
             At the time, we were creating faux variants on top of

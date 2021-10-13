@@ -26,7 +26,7 @@ const Nav = ({
           <Flex css={{ flexBasis: 'max-content' }}>
             <Text
               gradient
-              color='purple'
+              color='accent'
               size='3'
               weight='2'
               case='capitalize'
@@ -36,7 +36,7 @@ const Nav = ({
             <Text
               size='2'
               gradient
-              color='purple'
+              color='accent'
               css={{
                 marginTop: 'auto',
                 mx: '$3',

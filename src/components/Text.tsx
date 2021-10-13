@@ -44,32 +44,20 @@ export const Text = styled('div', {
       },
     },
     color: {
-      tomato: {
-        color: '$tomato11',
+      primary: {
+        color: '$primary11',
       },
-      red: {
-        color: '$red11',
+      secondary: {
+        color: '$secondary11',
       },
-      crimson: {
-        color: '$crimson11',
+      accent: {
+        color: '$accent11',
       },
-      pink: {
-        color: '$pink11',
+      hiContrast: {
+        color: '$hiContrast',
       },
-      plum: {
-        color: '$plum11',
-      },
-      purple: {
-        color: '$purple11',
-      },
-      violet: {
-        color: '$violet11',
-      },
-      contrast: {
-        color: '$highContrast',
-      },
-      lowContrast: {
-        color: '$lowContrast',
+      loContrast: {
+        color: '$loContrast',
       },
       black: {
         color: '$blackA11',
@@ -101,52 +89,38 @@ export const Text = styled('div', {
   },
   compoundVariants: [
     {
-      color: 'tomato',
+      color: 'primary',
       gradient: 'true',
       css: {
-        linearGradient: 'to right, $tomato11, $red11',
+        linearGradient: 'to right, $primary11, $tint11',
       },
     },
     {
-      color: 'red',
+      color: 'secondary',
       gradient: 'true',
       css: {
-        linearGradient: 'to right, $red11, $crimson11',
+        linearGradient: 'to right, $secondary11, $accent11',
       },
     },
     {
-      color: 'crimson',
+      color: 'accent',
       gradient: 'true',
       css: {
-        linearGradient: 'to right, $crimson11, $pink11',
-      },
-    },
-    {
-      color: 'pink',
-      gradient: 'true',
-      css: {
-        linearGradient: 'to right, $pink11, $purple11',
-      },
-    },
-    {
-      color: 'purple',
-      gradient: 'true',
-      css: {
-        linearGradient: 'to right, $purple11, $plum11',
-      },
-    },
-    {
-      color: 'plum',
-      gradient: 'true',
-      css: {
-        linearGradient: 'to right, $plum11, $violet11',
+        linearGradient: 'to right, $accent11, $shade11',
       },
     },
     {
       color: 'contrast',
       gradient: 'true',
       css: {
-        linearGradient: 'to right, $lowContrast, $highContrast',
+        linearGradient: 'to right, $hiContrast, $loContrast',
+      },
+    },
+    {
+      color: 'loContrast',
+      gradient: 'true',
+      css: {
+        linearGradient: 'to right, $loContrast, $hiContrast',
       },
     },
     {
@@ -167,7 +141,7 @@ export const Text = styled('div', {
   defaultVariants: {
     size: '1',
     weight: '1',
-    color: 'lowContrast',
+    color: 'loContrast',
     case: 'initial',
   },
 });
@@ -176,7 +150,7 @@ export const TextTitle = styled(Text, {
   defaultVariants: {
     size: '3',
     weight: '3',
-    color: 'contrast',
+    color: 'hiContrast',
     case: 'upper',
   },
 });
@@ -184,7 +158,7 @@ export const TextHead = styled(Text, {
   defaultVariants: {
     size: '2',
     weight: '2',
-    color: 'contrast',
+    color: 'hiContrast',
     case: 'capitalize',
   },
 });
@@ -192,7 +166,7 @@ export const TextSub = styled(Text, {
   defaultVariants: {
     size: '1',
     weight: '3',
-    color: 'contrast',
+    color: 'hiContrast',
     case: 'capitalize',
   },
 });

@@ -130,8 +130,8 @@ export const { styled, config, theme, createTheme, globalCss } =
         appBg2: '$base2',
         appBg3: '$base9',
         appBg4: '$base10',
-        lowContrast: '$base11',
-        highContrast: '$base12',
+        loContrast: '$base11',
+        hiContrast: '$base12',
 
         white: '$whiteA12',
         black: '$blackA12',
@@ -370,8 +370,8 @@ export const altTheme = createTheme('alt-theme', {
     appBg2: '$base2',
     appBg3: '$base9',
     appBg4: '$base10',
-    lowContrast: '$base11',
-    highContrast: '$base12',
+    loContrast: '$base11',
+    hiContrast: '$base12',
 
     white: '$whiteA12',
     black: '$blackA12',
@@ -470,8 +470,8 @@ export const darkTheme = createTheme('dark-theme', {
     appBg2: '$base2',
     appBg3: '$base9',
     appBg4: '$base10',
-    lowContrast: '$base11',
-    highContrast: '$base12',
+    loContrast: '$base11',
+    hiContrast: '$base12',
 
     white: '$whiteA12',
     black: '$blackA12',
