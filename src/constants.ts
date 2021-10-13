@@ -14,3 +14,9 @@ export const LINK_TREE = [
     href: '#support',
   },
 ] as const;
+
+export const THEMES = {
+  DEFAULT_THEME: 'default-theme',
+  DARK_THEME: 'dark-theme',
+  ALT_THEME: 'alt-theme',
+};

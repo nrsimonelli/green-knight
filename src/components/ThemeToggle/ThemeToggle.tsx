@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 import { Button } from '../Button';
-import { altTheme } from '../../stitches.config';
 import { ThemeContext } from './ThemeContext';
 import { RiSunLine } from 'react-icons/ri';
+import { THEMES } from '../../constants';
+import { altTheme, darkTheme } from '../../stitches.config';
 
 type Props = {
   children?: object | string;
@@ -10,6 +11,23 @@ type Props = {
 
 export const ThemeToggle = ({ children = <RiSunLine /> }: Props) => {
   const { theme, setTheme } = useContext(ThemeContext);
+
+  const handleThemeChange = () => {
+    switch (theme) {
+      case altTheme:
+        setTheme(darkTheme);
+        break;
+      case darkTheme:
+        setTheme(THEMES.DEFAULT_THEME);
+        break;
+      case THEMES.DEFAULT_THEME:
+        setTheme(altTheme);
+        break;
+      default:
+        setTheme(THEMES.DEFAULT_THEME);
+        break;
+    }
+  };
 
   return (
     <Button
@@ -26,13 +44,7 @@ export const ThemeToggle = ({ children = <RiSunLine /> }: Props) => {
           backgroundColor: '$appBg2',
         },
       }}
-      onClick={() =>
-        setTheme(
-          theme === altTheme.className
-            ? 'theme-default'
-            : altTheme.className
-        )
-      }
+      onClick={handleThemeChange}
     >
       {children}
     </Button>

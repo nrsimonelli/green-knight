@@ -13,7 +13,7 @@ type Props = {
   Toggle?: boolean;
 };
 
-export const Nav = ({
+const Nav = ({
   Title = 'untitled',
   Logo = <RiDropFill />,
   Links = LINK_TREE,
@@ -58,3 +58,5 @@ export const Nav = ({
     </Flex>
   );
 };
+
+export default Nav;

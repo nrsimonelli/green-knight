@@ -1,5 +1,6 @@
 import React, { createContext, useEffect, FC, useState } from 'react';
-import { altTheme } from '../../stitches.config';
+import { THEMES } from '../../constants';
+import { darkTheme, altTheme } from '../../stitches.config';
 
 const getInitialTheme = () => {
   if (typeof window !== 'undefined' && window.localStorage) {
@@ -13,10 +14,10 @@ const getInitialTheme = () => {
     );
     if (userMedia.matches) {
       // default is dark
-      return 'default-theme';
+      return darkTheme;
     }
   }
-  return altTheme.className;
+  return THEMES.DEFAULT_THEME;
 };
 
 export type ThemeContent = {
@@ -40,11 +41,14 @@ export const ThemeProvider: FC<ProviderContent> = ({
   const [theme, setTheme] = useState(getInitialTheme);
 
   const rawSetTheme = (rawTheme: string) => {
-    const isDefault = rawTheme === 'default-theme';
+    if (rawTheme) {
+      document.body.classList.remove(
+        darkTheme,
+        altTheme,
+        THEMES.DEFAULT_THEME
+      );
+    }
 
-    document.body.classList.remove(
-      isDefault ? 'default-theme' : altTheme.className
-    );
     document.body.classList.add(rawTheme);
 
     localStorage.setItem('color-theme', rawTheme);
