@@ -53,6 +53,21 @@ export const Button = styled('button', {
       hot: {
         fontWeight: '$2',
       },
+      light: {},
+    },
+    fixed: {
+      1: {
+        minWidth: 'max-content',
+        width: '$5',
+      },
+      2: {
+        minWidth: 'max-content',
+        width: '$6',
+      },
+      3: {
+        minWidth: 'max-content',
+        width: '192px',
+      },
     },
     size: {
       1: {
@@ -225,5 +240,6 @@ export const Button = styled('button', {
     shape: 'dull',
     color: 'base',
     size: '1',
+    type: 'light',
   },
 });

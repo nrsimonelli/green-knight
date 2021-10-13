@@ -4,9 +4,6 @@ export const Flex = styled('div', {
   boxSizing: 'border-box',
   display: 'flex',
 
-  // testing only
-  // boxShadow: 'inset 0 0 0 1px $colors$primary8',
-
   variants: {
     direction: {
       row: {
@@ -62,6 +59,11 @@ export const Flex = styled('div', {
       },
       wrapReverse: {
         flexWrap: 'wrap-reverse',
+      },
+    },
+    border: {
+      true: {
+        boxShadow: 'inset 0 0 0 1px $colors$primary8',
       },
     },
   },

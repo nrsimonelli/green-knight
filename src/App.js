@@ -12,6 +12,7 @@ import { Container } from './components/Container';
 import { globalCss } from './stitches.config';
 
 import Nav from './components/Nav/Nav';
+import Hero from './components/Hero/Hero';
 
 const globalStyles = globalCss({
   body: {
@@ -126,6 +127,7 @@ const App = () => {
   return (
     <>
       <Nav Title='Green knight' />
+      <Hero />
       <Flex>
         <Container static='2' screen>
           <ButtonDemo />

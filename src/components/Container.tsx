@@ -9,9 +9,6 @@ export const Container = styled('div', {
   width: '100%',
   maxWidth: 'none',
 
-  // Testing only
-  // boxShadow: 'inset 0 0 0 1px $colors$accent8',
-
   variants: {
     static: {
       1: { maxWidth: '$s1' },
@@ -42,6 +39,11 @@ export const Container = styled('div', {
     screen: {
       true: {
         minHeight: '$vh',
+      },
+    },
+    border: {
+      true: {
+        boxShadow: 'inset 0 0 0 1px $colors$secondary8',
       },
     },
   },
