@@ -125,7 +125,7 @@ const App = () => {
 
   return (
     <>
-      <Nav Title='hello' />
+      <Nav Title='Green knight' />
       <Flex>
         <Container static='2' screen>
           <ButtonDemo />

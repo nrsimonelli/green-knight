@@ -202,7 +202,7 @@ export const Button = styled('button', {
       color: 'accent',
       type: 'hot',
       css: {
-        color: '$white',
+        color: '$black',
         backgroundColor: '$accent9',
         '&:hover': {
           backgroundColor: '$accent10',

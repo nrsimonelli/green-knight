@@ -10,7 +10,7 @@ export const Container = styled('div', {
   maxWidth: 'none',
 
   // Testing only
-  boxShadow: 'inset 0 0 0 1px $colors$accent8',
+  // boxShadow: 'inset 0 0 0 1px $colors$accent8',
 
   variants: {
     static: {

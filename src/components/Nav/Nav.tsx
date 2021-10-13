@@ -33,19 +33,17 @@ const Nav = ({
             >
               {Title}
             </Text>
-            <Text
-              size='2'
-              gradient
-              color='accent'
-              css={{
-                marginTop: 'auto',
-                mx: '$3',
-              }}
-            >
+          </Flex>
+          <Flex
+            justify='center'
+            align='end'
+            css={{ flexGrow: '7', height: '$full' }}
+          >
+            <Text size='2' gradient color='accent'>
               {Logo}
             </Text>
           </Flex>
-          <Flex align='center' justify='end' css={{ flexGrow: '7' }}>
+          <Flex align='center' justify='end'>
             {LINK_TREE.map((link, index) => (
               <TextSub css={{ ml: '$2' }} key={index}>
                 {link.title}
