@@ -14,15 +14,20 @@ export const ThemeToggle = ({ children = <RiSunLine /> }: Props) => {
 
   const handleThemeChange = () => {
     switch (theme) {
+      case THEMES.ALT_THEME:
       case altTheme:
         setTheme(darkTheme);
         break;
+
       case darkTheme:
+      case THEMES.DARK_THEME:
         setTheme(THEMES.DEFAULT_THEME);
         break;
+
       case THEMES.DEFAULT_THEME:
         setTheme(altTheme);
         break;
+
       default:
         setTheme(THEMES.DEFAULT_THEME);
         break;
