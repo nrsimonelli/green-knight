@@ -45,7 +45,12 @@ const Nav = ({
           </Flex>
           <Flex align='center' justify='end'>
             {LINK_TREE.map((link, index) => (
-              <TextSub css={{ ml: '$2' }} key={index}>
+              <TextSub
+                as='a'
+                href={link.href}
+                css={{ ml: '$2' }}
+                key={index}
+              >
                 {link.title}
               </TextSub>
             ))}

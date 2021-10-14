@@ -6,12 +6,12 @@ export const LINK_TREE = [
     href: '/',
   },
   {
-    title: 'about',
-    href: '#about',
+    title: 'demo',
+    href: '#demo',
   },
   {
-    title: 'support',
-    href: '#support',
+    title: 'about',
+    href: '#about',
   },
 ] as const;
 

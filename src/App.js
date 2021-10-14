@@ -56,7 +56,7 @@ const App = () => {
 
   const ButtonDemo = () => {
     return (
-      <Flex direction='column' css={{ my: '$3' }}>
+      <Flex id='demo' direction='column' css={{ my: '$3' }}>
         <Flex css={{ mt: '$3' }}>
           <TextHead css={{ mr: '$4' }}>Buttons</TextHead>
           <Button
