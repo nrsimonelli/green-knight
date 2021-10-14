@@ -20,7 +20,7 @@ const Nav = ({
   Toggle = false,
 }: Props) => {
   return (
-    <Flex align='center' css={{ height: '$5' }}>
+    <Flex align='center' border css={{ height: '$5' }}>
       <Container css={{ height: '$full' }}>
         <Flex align='center' css={{ height: '$full' }}>
           <Flex css={{ flexBasis: 'max-content' }}>
